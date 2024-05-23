@@ -1,0 +1,131 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      color: rgb(255, 255, 255);
+      font-family: "Ubuntu", sans-serif;
+      background-color: black;
+    }
+    nav {
+      background-color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav ul li {
+      margin-right: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      position: relative;
+    }
+    nav ul li a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background-color: rgb(255, 255, 255);
+      transition: width 0.5s ease-in-out;
+    }
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 90px;
+      margin-right: 10px;
+      border-radius: 50%;
+    }
+    .brand-text {
+      font-size: 20px;
+    }
+    .name{
+        text-align: center;
+        font-size: 64px;
+        font-weight: 700;
+        text-shadow: 0 0 20px rgba(0, 255, 242, 1);
+    }
+    .language-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 70px;
+    }
+    .language-item {
+      margin: 30px;
+      text-align: center;
+    }
+    .language-item img {
+      width: 200px;
+      border-radius: 10%;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    .language-item img:hover {
+      transform: scale(1.1);
+      filter:drop-shadow(0px 0px 20px rgba(0, 255, 242, 0.438)) ; /* Desired glow color */
+    }
+ 
+      /* Css for Form */
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+    }
+
+    form {
+      max-width: 500px;
+      margin: 40px auto ;
+      padding: 20px;
+      background-color: #333333;
+      border-radius: 8px;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-right: 15px;
+      padding: 20px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 80%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 100px;
+      /* resize: vertical; */
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #00aeff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #000000;
+    }

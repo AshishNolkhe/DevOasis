@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevOasis by Ashish</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo-container">
+      <img src="Img/Logo.png" alt="Logo" class="logo">
+      <span class="brand-text">DevOasis</span>
+    </div>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="#contactUs">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="name">DevOasis : The Oasis for Developers</div>
+  <div class="language-list">
+    <div class="language-item">
+      <a href="Languages/c.html">
+        <img src="Img/c.png" alt="Language 1">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/cpp.html">
+        <img src="Img/cpp.png" alt="Language 2">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/csharp.html">
+        <img src="Img/csharp.png" alt="Language 3">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/go.html">
+        <img src="Img/go.png" alt="Language 4">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/lua.html">
+        <img src="Img/lua.png" alt="Language 5">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/html.html">
+        <img src="Img/html.png" alt="Language 6">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/java.html">
+        <img src="Img/java.png" alt="Language 7">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/javascript.html">
+        <img src="Img/javascript.png" alt="Language 8">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/Kotlin.html">
+        <img src="Img/kotlin.png" alt="Language 9">
+      </a>
+    </div>
+    <div class="language-item">
+      <a href="Languages/python.html">
+        <img src="Img/python.png" alt="Language 10">
+      </a>
+    </div>
+    <!-- Add more language as needed -->
+  </div>
+
+  <!-- Contact US Form -->
+  <h2 id="contactUs">Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="daa66a81-1d47-44ab-906e-618fac485bdc">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+      <label for="name">Name : </label><br>
+      <input type="text" id="name" name="name" required>
+    
+      <label for="email">Email : </label><br>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="message">Message : </label><br>
+      <textarea name="message" rows="4" required></textarea>
+    <br>
+    
+    <!-- hCaptcha Spam Protection -->
+    <br>
+    <div class="h-captcha" data-captcha="true"></div>
+
+    <button type="submit">Submit</button>
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+</form>
+<!-- Required for hCaptcha -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+</html>
