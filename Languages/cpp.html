@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>DevOasis by Ashish</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="LangImg/Logo.png" alt=""></span>
+        <div class="content center">
+             C++ Cheatsheet By DevOasis
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>Basic Syntax:</b>
+                <pre class="language-cpp"><code>#include <iostream>
+
+int main() {
+    std::cout &lt;&lt; "Hello\n";
+    return 0;
+}
+</code></pre>
+            </li> 
+            <li><b>Compiling and running:</b>
+                <pre class="language-cpp"><code>$ g++ hello.cpp -o hello
+$ ./hello
+Hello
+</code></pre>
+            </li> 
+            <li><b>Variables:</b>
+                <pre class="language-cpp"><code>int number = 5;       // Integer
+float f = 0.95;       // Floating number
+double PI = 3.14159;  // Floating number
+char yes = 'Y';       // Character
+std::string s = "ME"; // String (text)
+bool isRight = true;  // Boolean
+
+// Constants
+const float RATE = 0.8;
+</code></pre>
+            </li> 
+            <li><b>User Input:</b>
+                <pre class="language-cpp"><code>int num;
+
+std::cout &lt;&lt; "Type a number: ";
+std::cin >> num;
+
+std::cout &lt;&lt; "You entered " &lt;&lt; num;
+</code></pre>
+            </li> 
+            <li><b>Comments:</b>
+                <pre class="language-cpp"><code>// A single one line comment in C++
+
+/* This is a multiple line comment
+    in C++ */
+</code></pre>
+            </li> 
+            <li><b>If statement:</b>
+                <pre class="language-cpp"><code>if (a == 10) {
+// do something
+}
+
+int number = 16;
+
+if (number % 2 == 0)
+{
+    std::cout << "even";
+}
+else
+{
+    std::cout << "odd";
+}
+
+// Outputs: even
+</code></pre>
+            </li> 
+            <li><b>Else if statement:</b>
+                <pre class="language-cpp"><code>int score = 99;
+if (score == 100) {
+    std::cout << "Superb";
+}
+else if (score >= 90) {
+    std::cout << "Excellent";
+}
+else if (score >= 80) {
+    std::cout << "Very Good";
+}
+else if (score >= 70) {
+    std::cout << "Good";
+}
+else if (score >= 60)
+    std::cout << "OK";
+else
+    std::cout << "What?";
+</code></pre>
+            </li> 
+            <li><b>Ternary Operator:</b>
+                <pre class="language-cpp"><code>           ┌── True ──┐
+Result = Condition ? Exp1 : Exp2;
+            └───── False ─────┘
+//Example
+int x = 3, y = 5, max;
+max = (x > y) ? x : y;
+
+// Outputs: 5
+std::cout << max << std::endl;
+
+</code></pre>
+            </li> 
+            <li><b>Switch Statement:</b>
+                <pre class="language-cpp"><code>int num = 2;
+switch (num) {
+    case 0:
+        std::cout << "Zero";
+        break;
+    case 1:
+        std::cout << "One";
+        break;
+    case 2:
+        std::cout << "Two";
+        break;
+    case 3:
+        std::cout << "Three";
+        break;
+    default:
+        std::cout << "What?";
+        break;
+}
+</code></pre>
+            </li> 
+            <li><b>While loop:</b>
+                <pre class="language-cpp"><code>int i = 0;
+while (i < 6) {
+    std::cout << i++;
+}
+
+// Outputs: 012345
+</code></pre>
+            </li> 
+            <li><b>Do-While loop:</b>
+                <pre class="language-cpp"><code>int i = 1;
+do {
+    std::cout << i++;
+} while (i <= 5);
+
+// Outputs: 12345
+</code></pre>
+            </li> 
+            <li><b>For loop with continue:</b>
+                <pre class="language-cpp"><code>for (int i = 0; i < 10; i++) {
+if (i % 2 == 0) {
+    continue;
+}
+std::cout << i;
+} // Outputs: 13579
+</code></pre>
+            </li> 
+        </ol>
+    </div>
+</body>
+
+</html>

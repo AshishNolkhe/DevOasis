@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    font-weight: bold;
+}
+
+body{
+    background-color: #2728222d;
+    font-family: "Tilt neon", sans-serif;
+}
+
+nav{
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272822;
+    color: white;
+    height: 72px;
+}
+
+.container{
+    width: 50vw;
+    padding: 32px 0;
+    margin: auto;
+    
+}
+
+.logo{
+    padding: 0 13px;
+}
+
+.logo img{
+    width: 70px;
+}
+
+.toolbar-item button{
+    cursor: pointer !important;
+    color: white !important;
+    border: 2px solid white !important;
+    border-radius: 15px !important;
+    padding: 5px 14px !important;
+}

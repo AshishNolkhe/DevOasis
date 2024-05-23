@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>DevOasis by Ashish</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="LangImg/Logo.png" alt=""></span>
+        <div class="content center">
+            Go Cheatsheet By DevOasis
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>Basic Syntax:</b>
+                <pre class="language-go">
+<code>package main
+
+import "fmt"
+
+func main() {
+fmt.Println("Hello, world!")
+}
+</code></pre>
+            </li> 
+            <li><b>Running :</b>
+                <pre class="language-go">
+<code>$ go run hello.go
+Hello, world!    
+</code></pre>
+            </li> 
+            <li><b>Variables:</b>
+                <pre class="language-go">
+<code>var s1 string
+s1 = "Learn Go!"
+
+// declare multiple variables at once
+var b, c int = 1, 2
+var d = true
+//Short declaration
+s1 := "Learn Go!"        // string
+b, c := 1, 2             // int
+d := true                // bool
+</code></pre>
+            </li> 
+            <li><b>Functions:</b>
+                <pre class="language-go">
+<code>package main
+
+import "fmt"
+
+// The entry point of the programs
+func main() {
+    fmt.Println("Hello world!")
+    say("Hello Go!")
+}
+
+func say(message string) {
+    fmt.Println("You said: ", message)
+}
+</code></pre>
+            </li> 
+            <li><b>Comments:</b>
+                <pre class="language-go">
+<code>// Single line comment
+
+/* Multi-
+    line comment */
+</code></pre>
+            </li> 
+            <li><b>Strings:</b>
+                <pre class="language-go">
+<code>s1 := "Hello" + "World"
+
+s2 := `A "raw" string literal
+can include line breaks.`
+
+// Outputs: 10
+fmt.Println(len(s1))
+
+// Outputs: Hello
+fmt.Println(string(s1[0:5]))
+</code></pre>
+            </li> 
+            <li><b>Arrays:</b>
+                <pre class="language-go">
+<code>┌────┬────┬────┬────┬─────┬─────┐
+| 2  | 3  | 5  | 7  | 11  | 13  |
+└────┴────┴────┴────┴─────┴─────┘
+  0    1    2    3     4     5
+
+primes := [...]int{2, 3, 5, 7, 11, 13}
+fmt.Println(len(primes)) // => 6
+
+// Outputs: [2 3 5 7 11 13]
+fmt.Println(primes)
+
+// Same as [:3], Outputs: [2 3 5]
+fmt.Println(primes[0:3])     
+</code></pre>
+            </li> 
+            <li><b>Pointers:</b>
+                <pre class="language-go">
+<code>func main () {
+b := *getPointer()
+fmt.Println("Value is", b)
+}
+
+func getPointer () (myPointer *int) {
+a := 234
+return &a
+}
+
+a := new(int)
+*a = 234
+</code></pre>
+            </li> 
+            <li><b>Constants:</b>
+                <pre class="language-go">
+<code>const s string = "constant"
+const Phi = 1.618
+const n = 500000000
+const d = 3e20 / n
+fmt.Println(d)
+</code></pre>
+            </li> 
+            <li><b>Type Conversion:</b>
+                <pre class="language-go">
+<code>i := 90
+f := float64(i)
+u := uint(i)
+
+// Will be equal to the character Z
+s := string(i)
+</code></pre>
+            </li> 
+            <li><b>Conditionals:</b>
+                <pre class="language-go">
+<code>a := 10
+
+if a > 20 {
+    fmt.Println(">")
+} else if a < 20 {
+    fmt.Println("<")
+} else {
+    fmt.Println("=")
+}
+</code></pre>
+            </li> 
+            <li><b>Switch:</b>
+                <pre class="language-go">
+<code>x := 42.0
+switch x {
+case 0:
+case 1, 2:
+    fmt.Println("Multiple matches")
+case 42:   // Don't "fall through".
+    fmt.Println("reached")
+case 43:
+    fmt.Println("Unreached")
+default:
+    fmt.Println("Optional")
+}
+</code></pre>
+            </li> 
+            
+        </ol>
+    </div>
+</body>
+
+</html>

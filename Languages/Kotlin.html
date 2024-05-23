@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>DevOasis by Ashish</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="LangImg/Logo.png" alt=""></span>
+        <div class="content center">
+            Kotlin Cheatsheet By DevOasis
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>main():</b>
+                <pre class="language-kotlin">
+<code>fun main() {
+println("Greetings, QuickRef.ME!")
+// Code goes here
+}  
+</code></pre>
+            </li> 
+            <li><b>Print Statement:</b>
+                <pre class="language-kotlin">
+<code>println("Greetings, earthling!")
+print("Take me to ")
+print("your leader.")
+
+/*
+Print:
+Greetings, earthling!
+Take me to your leader.
+*/    
+</code></pre>
+            </li> 
+            <li><b>Notes OR Comments:</b>
+                <pre class="language-kotlin">
+<code>// this is a single line comment
+/*
+this
+note
+for
+many
+*/
+</code></pre>
+            </li> 
+            <li><b>Variables:</b>
+                <pre class="language-kotlin">
+<code>var age = 25 //mutable variables
+age = 26
+
+val goldenRatio = 1.618 //immutable variables
+</code></pre>
+            </li> 
+            <li><b>String:</b>
+                <pre class="language-kotlin">
+<code>var color = "Purple"
+//String concatenation
+var streetAddress = "123 Main St." 
+var cityState = "Brooklyn, NY"
+
+println(streetAddress + " " + cityState)
+// Print: 123 Main St. Brooklyn, NY
+
+//String template
+var address = "123 Main St."
+println("The address is $address")
+// prints: The address is 123 Main St.
+</code></pre>
+            </li> 
+            <li><b>Math library:</b>
+                <pre class="language-kotlin">
+<code>Math.pow(2.0, 3.0) // 8.0
+Math.min(6, 9)     // 6
+Math.max(10, 12)   // 12
+Math. round(13.7)  // 14
+</code></pre>
+            </li> 
+            <li><b>if expression:</b>
+                <pre class="language-kotlin">
+<code>var morning = true
+
+if (morning) {
+    println("Rise and shine!")
+}
+// Print: Rise and shine!    
+</code></pre>
+            </li> 
+            <li><b>else expression:</b>
+                <pre class="language-kotlin">
+<code>var rained = false
+
+if (rained) {
+    println("No need to water the plants today.")
+} else {
+    println("The plant needs to be watered!")
+}
+// print: The plant needs watering!    
+</code></pre>
+            </li> 
+            <li><b>else if expression:</b>
+                <pre class="language-kotlin">
+<code>var age = 65
+
+if (age < 18 ) {
+    println("You are considered a minor")
+} else if (age < 60) {
+    println("You are considered an adult")
+} else {
+    println("You are considered senior")
+}
+
+// print: you are considered senior    
+</code></pre>
+            </li> 
+            <li><b>Functions:</b>
+                <pre class="language-kotlin">
+<code>fun greet() {
+println("Hey there!")
+}
+
+fun main() {
+//Function call
+greet() //Prints: Hey there!
+} 
+</code></pre>
+            </li> 
+            <li><b>Class Example:</b>
+                <pre class="language-kotlin">
+<code>//class with properties containing default values
+class Student {
+    var name = "Lucia"
+    var semester = "Fall"
+    var gpa = 3.95
+}
+
+//shorthand syntax without class body
+class Student    
+</code></pre>
+            </li> 
+            <li><b>Return Statement:</b>
+                <pre class="language-kotlin">
+<code>//Return type is declared outside the parentheses
+fun getArea(length: Int, width: Int): Int {
+    var area = length *width
+
+    //return statement
+    return area
+}
+
+fun main() {
+    var myArea = getArea(10, 8)
+println("The area is $myArea.")
+//Prints: The area is 80.
+}    
+</code></pre>
+            </li> 
+            
+        </ol>
+    </div>
+</body>
+
+</html>

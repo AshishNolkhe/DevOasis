@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="prism.css">
+        <script src="prism.js"></script>
+        <link rel="stylesheet" href="style.css">
+    <title>DevOasis by Ashish</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="LangImg/Logo.png" alt=""></span>
+        <div class="content center">
+            C Cheatsheet By DevOasis
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <li><b>Boilerplate Code:</b>
+                <pre class="language-c">
+<code>#include&lt;stdio.h&gt; //header files
+int main() //main function
+{
+    // Your code here
+    return(0); //returning value to int main()
+}</code></pre>
+            </li> 
+            <li><b>printf function:</b>
+                <pre class="language-c">
+<code>printf("Hello World!");</code></pre>
+            </li> 
+            <li><b>Compile hello.c file with gcc:</b>
+                <pre class="language-c">
+<code>$ gcc hello.c -o hello</code></pre>
+            </li> 
+            <li><b>Run the compiled binary hello:</b>
+                <pre class="language-c">
+<code>$ ./hello</code></pre>
+            </li> 
+            <li><b>Variables:</b>
+                <pre class="language-c">
+<code>int myNum = 15;
+
+int myNum2; // do not assign, then assign
+myNum2 = 15;
+
+int myNum3 = 15; // myNum3 is 15
+myNum3 = 10;     // myNum3 is now 10
+
+float myFloat = 5.99; // floating point number
+char myLetter = 'D';  // character
+
+int x = 5;
+int y = 6;
+int sum = x + y; // add variables to sum
+
+// declare multiple variables
+int x = 5, y = 6, z = 50;</code></pre>
+            </li> 
+            <li><b>Constants:</b>
+                <pre class="language-c"><code>const int minutesPerHour = 60;
+const float PI = 3.14;</code></pre>
+            </li> 
+            <li><b>Comments:</b>
+                <pre class="language-c"><code>// this is a comment
+printf("Hello World!"); // Can comment anywhere in file
+
+/*Multi-line comment, print Hello World!
+to the screen, it's awesome */
+</code></pre>
+            </li> 
+            <li><b>Strings:</b>
+                <pre class="language-c"><code>char greetings[] = "Hello World!";
+printf("%s", greetings);
+</code></pre>
+            </li> 
+            <li><b>Conditions:</b>
+                <pre class="language-c"><code>int time = 20;
+if (time &lt; 18) {
+    printf("Goodbye!");
+} else {
+    printf("Good evening!");
+}
+// Output -> "Good evening!"
+int time = 22;
+if (time &lt; 10) {
+    printf("Good morning!");
+} else if (time &lt; 20) {
+    printf("Goodbye!");
+} else {
+    printf("Good evening!");
+}
+// Output -> "Good evening!"
+</code></pre>
+            </li> 
+            <li><b>Switch:</b>
+                <pre class="language-c"><code>int day = 4;
+
+switch (day) {
+    case 3: printf("Wednesday"); break;
+    case 4: printf("Thursday"); break;
+    default:
+    printf("Weekend!");
+}
+// output -> "Thursday" (day 4)
+</code></pre>
+            </li> 
+            <li><b>While loop:</b>
+                <pre class="language-c"><code>int i = 0;
+
+while (i &lt; 5) {
+    printf("%d\n", i);
+    i++;
+}
+</code></pre>
+            </li> 
+            <li><b>Do-While loop:</b>
+                <pre class="language-c"><code>int i = 0;
+
+do {
+printf("%d\n", i);
+i++;
+} while (i &lt; 5);
+</code></pre>
+            </li> 
+            <li><b>For loop:</b>
+                <pre class="language-c"><code>for (int i = 0; i < 5; i++) {
+printf("%d\n", i);
+}
+</code></pre>
+            </li> 
+        </ol>
+    </div>
+</body>
+
+</html>
